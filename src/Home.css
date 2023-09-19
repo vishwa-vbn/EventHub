@@ -1,0 +1,247 @@
+/* Home.css */
+
+/* Main container */
+.home-container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 20px;
+  margin-top: 70px;
+
+}
+
+/* Hero section */
+.hero-container {
+  position: relative;
+  background-image: url('/public/grad.png'); /* Replace with the path to your hero image */
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  opacity: 0.95;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero-slogan {
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Adjust styles for the search bar */
+.search-container {
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin-top: 20px;
+}
+
+.search-container input[type="text"] {
+  flex: 1;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.search-container input[type="text"]:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 8px rgba(0, 86, 179, 0.6);
+}
+
+.search-btn {
+  background: linear-gradient(45deg, #000000, #333333);
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  margin-left: 15px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Categories section */
+.categories-section {
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.category-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.category-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.category-btn.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Event card section */
+.event-card-section {
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.card-container-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.home-event-card {
+  width: 300px;
+  padding: 16px;
+  padding-bottom: 1px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.home-event-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.home-event-card h3 {
+  margin: 8px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.home-event-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Add hover effect to event cards */
+.home-event-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add transition for hover effect */
+.home-event-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Responsive adjustments (Optional) */
+@media screen and (max-width: 768px) {
+  .home-container {
+    padding: 10px;
+  }
+  
+  .hero-container {
+    height: 200px;
+    padding: 20px;
+  }
+  
+  .hero-slogan {
+    font-size: 28px;
+  }
+  
+  .search-container input[type="text"] {
+    font-size: 14px;
+  }
+  
+  .search-btn {
+    padding: 8px 16px;
+    font-size: 16px;
+  }
+  
+  .categories-section h2,
+  .event-card-section h2 {
+    font-size: 20px;
+  }
+  
+  .home-event-card {
+    width: 100%;
+  }
+}
+.filters-container
+{
+  margin-left: 10px;
+}
+
+.filters-container button{
+  border:none;
+  margin:auto;
+  margin-right:20px;
+  background-color: white;
+  margin-top: 50px;
+  font-size: 15px;
+}
+
+
+.view-all-link {
+  margin-top: 40px;
+  margin-right: 50px;
+  cursor: pointer;
+  color: gray;
+}
+
+.head-collapse-link{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Home.css */
+@keyframes loadingAnimation {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.loading-skeleton {
+  background-color: #f1f1f1;
+  background-image: linear-gradient(90deg, #f1f1f1 25%, #e2e2e2 50%, #f1f1f1 75%);
+  background-size: 200% 100%;
+  animation: loadingAnimation 1.5s infinite;
+}

@@ -1,0 +1,163 @@
+/* navbar.css */
+.navbar-container {
+  display: flex;
+  width:100%;
+  position: fixed;
+  z-index: 9999999;
+  top:0;
+  justify-content: space-between;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.logo {
+  font-size: 24px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  margin-right: 50px;
+  transition: color 0.2s;
+}
+
+.navbar-links a:last-child {
+  margin-right: 0;
+}
+
+.navbar-links a:hover {
+  color: #007bff;
+}
+
+.profile-btn {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+.profile-box {
+  position: absolute;
+  top: 55px;
+  right: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index:1999999;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-username {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.profile-email {
+  font-size: 14px;
+  color: #666;
+}
+
+.logout-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+  }
+
+  .profile-btn {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .profile-box {
+    top: 45px;
+    right: 10px;
+  }
+
+  .navbar-container {
+    justify-content: center;
+  }
+
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .navbar-links a {
+    margin: 10px 0;
+  }
+
+  .navbar-links a:last-child {
+    margin-bottom: 0;
+  }
+
+  .profile-img {
+    margin: 0;
+  }
+
+  .profile-box {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}

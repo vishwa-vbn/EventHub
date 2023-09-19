@@ -1,0 +1,266 @@
+/* EventDetails.css */
+
+/* Global styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styles */
+.card-main-container2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  align-items: center;
+}
+
+.event-card {
+  background-color: #fff;
+  overflow: hidden;
+  width: 80%;
+}
+
+.event-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.event-details {
+  padding: 32px;
+}
+
+/* Event header styles */
+.head-cat-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head-cat-desc h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.event-Date {
+  font-size: 18px;
+  color: #777;
+}
+
+/* Seat reservation and registration box styles */
+.seat-reservation-container,
+.registration-box {
+  margin-top: 32px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+}
+
+.seat-reservation-container label,
+.registration-box label {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.seat-reservation-container input[type="number"],
+.registration-box input[type="number"] {
+  width: 100px;
+  padding: 12px;
+  margin-left: 5px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.seat-reservation-container button,
+.registration-box button {
+
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.seat-reservation-container button:hover,
+.registration-box button:hover {
+  background-color: #0056b3;
+}
+
+/* Event details styles */
+.date-box,
+.time-box,
+.venue-box,
+.ticket-box
+
+
+
+ {
+  /* margin-top: 32px; */
+  display:flex;
+}
+.event-registration{
+  margin: auto;
+  border-radius: 8px;
+  padding:10px;
+  width:100%;
+  text-align: center;
+  background-color: #007bff;
+
+}
+
+
+.date-box h3,
+.time-box h3,
+.venue-box h3,
+.ticket-box h3,
+.description h3,
+.organiser-box h3,
+.estimated-time-box h3,
+.agenda-box h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #333;
+}
+.icon{
+  margin-top: 28px;
+  padding-top: 20px;
+  padding-right: 10px;
+  font-size: 22px;
+}
+
+.event-Date,
+.event-time,
+.event-venue,
+.event-registration,
+.organiser-box p,
+.estimated-time-box p,
+.agenda-box p {
+  font-size: 18px;
+  color: #444;
+}
+
+.ticket-box p {
+  margin-top: 12px;
+  font-size: 18px;
+}
+
+.ticket-box p:last-child {
+  margin-bottom: 32px;
+}
+
+/* Free event message styles */
+.free-event-message {
+  margin-top: 32px;
+  font-size: 20px;
+  color: #28a745;
+}
+
+/* Add CSS animation for smooth transitions */
+.fade-in {
+  opacity: 0;
+  animation: fadeInAnimation ease 1s forwards;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Additional styles for a modern UI */
+
+/* Event description styles */
+.description {
+  margin-top: 32px;
+  line-height: 1.6;
+}
+
+.description h3 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+/* Organiser and estimated time styles */
+.organiser-box,
+.estimated-time-box {
+  margin-top: 48px;
+}
+
+.organiser-box h3,
+.estimated-time-box h3 {
+  color: #333;
+  font-size: 24px;
+}
+
+.organiser-box p,
+.estimated-time-box p {
+  font-size: 18px;
+  color: #444;
+  margin-top: 8px;
+}
+
+/* Agenda styles */
+.agenda-box {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid #ddd;
+}
+
+.agenda-box h3 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.agenda-box p {
+  font-size: 18px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Online mode styles */
+.ticket-box p,
+.online-mode {
+  margin-top: 12px;
+  font-size: 18px;
+  color: #444;
+}
+
+.online-mode {
+  color: #007bff;
+}
+
+/* Venue styles */
+.venue-box h3 {
+  color: #333;
+  font-size: 24px;
+}
+
+.venue-box p {
+  font-size: 18px;
+  color: #444;
+}
+
+/* Register link styles */
+.event-registration a {
+  padding:5px;
+  color: white ;
+  text-decoration: none;
+}
+
+.event-registration a:hover {
+  text-decoration: underline;
+}
